@@ -76,27 +76,20 @@ class QuestionViewController: UIViewController {
 extension QuestionViewController {
     private func updateUI() {
         
-        // Hide stacks
         for stackView in [singleStackView, multipleStackView, rangedStackView] {
             stackView?.isHidden = true
         }
         
-        // Get current question
         let currentQuestion = questions[questionIndex]
         
-        // Set current question for questionLabel
         questionLabel.text = currentQuestion.title
         
-        // Calculate progress
         let totalProgress = Float(questionIndex) / Float(questions.count)
         
-        // Set progress for questionProgressView
         questionProgressView.setProgress(totalProgress, animated: true)
         
-        // Set title
         title = "Вопрос № \(questionIndex + 1) из \(questions.count)"
         
-        // Show stacks corresponding to question type
         showCurrentAnswers(for: currentQuestion.responseType)
     }
     
