@@ -25,11 +25,11 @@ class ResultViewController: UIViewController {
         navigationItem.hidesBackButton = true
         
         countAnswers(answers)
+        
         guard let maxAnimalChosen = dictAnimals.max (by: { $0.value < $1.value }) else { return }
     
         maxAnimalLabel.text = "Вы \(maxAnimalChosen.key.rawValue)"
         descriptionLabel.text = "\(maxAnimalChosen.key.definition)"
-        
     }
     
     //MARK: - Private Methods
@@ -47,6 +47,4 @@ class ResultViewController: UIViewController {
             }
         }
     }
-    
-   
 }
