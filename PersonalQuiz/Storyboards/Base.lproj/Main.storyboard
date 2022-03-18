@@ -337,8 +337,8 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="animalTypelLabel" destination="4eI-sS-jhF" id="3ou-cO-xL7"/>
                         <outlet property="descriptionLabel" destination="FNz-ha-wpZ" id="VEh-ci-Ycj"/>
-                        <outlet property="maxAnimalLabel" destination="4eI-sS-jhF" id="3ou-cO-xL7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bbx-sM-sph" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
