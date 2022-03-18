@@ -74,7 +74,7 @@ class QuestionViewController: UIViewController {
 
 //MARK: - Private Methods
 extension QuestionViewController {
-    private func updateUI() {
+     private func updateUI() {
         
         for stackView in [singleStackView, multipleStackView, rangedStackView] {
             stackView?.isHidden = true
